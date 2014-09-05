@@ -1,3 +1,4 @@
+sudo -s
 cd ~
 sudo apt-get install -y ruby1.9.3 git
 gem install bundler
