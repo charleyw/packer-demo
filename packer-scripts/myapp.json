@@ -1,0 +1,18 @@
+{
+  "builders": [{
+    "type": "amazon-ebs",
+    "access_key": "AKIAJGEHPD3TIKOWZYTA",
+    "secret_key": "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",
+    "region": "ap-northeast-1",
+    "source_ami": "ami-1dd8fe1c",
+    "instance_type": "t1.micro",
+    "ssh_username": "ubuntu",
+    "ami_name": "packer-demo-{{timestamp}}"
+  }],
+  "provisioners": [
+    {
+    "type": "shell",
+    "script":"./deploy.sh"
+  }
+  ]
+}
