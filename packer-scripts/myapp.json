@@ -16,6 +16,11 @@
   }],
   "provisioners": [
     {
+    "type": "file",
+    "source": "rc.local",
+    "destination": "/tmp/rc.local"
+  },
+  {
     "type": "shell",
     "script":"./deploy.sh"
   }

@@ -1,0 +1,5 @@
+#!/bin/sh
+
+cd /home/ubuntu/packer-demo && bundle exec ruby -o 0.0.0.0 app.rb &
+
+exit 0
